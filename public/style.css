@@ -1,15 +1,21 @@
 body {
     margin: 200px;
 }
-    
+#navbar{
+    position: fixed;
+    transition: top 0.3s;
+}
 nav.navbar {
     background-color:white;
     border-color: white;
     -webkit-box-shadow: 0 8px 8px -6px #999;
     -moz-box-shadow: 0 8px 8px -6px #999;
     box-shadow: 0 8px 8px -6px #999;
-    margin-bottom: 0px;    
+    margin-bottom: 0px;
+
 }
+
+
 
 #navbarMenu{
     background-color: white;    
@@ -29,6 +35,7 @@ nav .navbar-toggler{
     color: green;
     background-color: green;
     background: green;
+    margin-top: 60px;
 }
 .navbar.navbar-inverse .navbar-brand {
     color: #047364;
@@ -130,6 +137,7 @@ nav .navbar-toggler{
     object-position: center 50%;
     object-fit: cover;
     max-height: 50vh;
+    margin-top: 50px;
 }
 .page-header-img{
     position: absolute;
@@ -317,9 +325,9 @@ color: #35465c;
     background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 
     color: white;
-    border-radius: 8px;
-    width: 28px;
-    height: 28px;
+    border-radius: 0.31em;
+    width: 1.1em;
+    height: auto;
 }
 
 .fa-github:hover,
@@ -383,6 +391,7 @@ background: #FF5733;
             opacity: 0.8;
             position: fixed;
             bottom: 23px;
+            bottom: 23px;
             right: 28px;
             width: 280px;
             
@@ -402,24 +411,43 @@ background: #FF5733;
     margin: 2vh;
     left: 0;
     font-size: 2vw;
+    z-index: 99;
+}
+#anchoring_box{
+    max-height: 19vh;
+    position: fixed;
+    bottom: 8.5em;
+    left: 2vw;
+    margin: auto;
 }
 
 .courseUpdates input{
-    font-size: 2vh; 
+    font-size: 1.3rem; 
     border: 1px black solid;
-    padding: 0px;
+    padding: 1px;
+    margin: 1px 2px 1px 0px;
+    max-height: 4vh;
+    max-width: 14vw;
+    
 }
 .courseUpdates button{
-    font-size: 2vh;
+    font-size: 1.3rem;
     border: 1px black solid;
-    padding: 0px;
+    padding: 1px;
+    margin: 1px 2px 1px 0px;
+    max-height: 4vh;
+    max-width: 14vw;
+    position: relative;
 
 }.courseUpdates form{
+    background: #047364;
     border: 3px solid #047364;
     border-radius: 15px;
     z-index: 99;
     margin-bottom: 1vh;
-    width: 39%;
+    height: 8rem;
+    width: 28vh;
+    font-size: 14px; 
     position: absolute;
 }
 
@@ -500,7 +528,8 @@ background: #FF5733;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 30vh;    
+    height: 30vh;
+    margin-top: 75px;
 }
 
 form .input-group{
@@ -556,7 +585,8 @@ button.btn {
 }
 
 .jumbotron-green {
-    background-color: #047364 !important; 
+    background-color: #047364 !important;
+    margin-top: 75px;
 }
 .instafeed{
     padding: 1rem;
@@ -622,6 +652,7 @@ nav {
   background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
+    margin-top: 75px;
 }
 
 /* Location map plugin */
@@ -696,7 +727,7 @@ background-repeat: no-repeat;
 */
 
 .applynow-headerimage img{
-
+    margin-top: 75px;
     width: 100%;
     max-height: 58vh;
     position: relative;
@@ -706,6 +737,8 @@ background-repeat: no-repeat;
 }
 input.applyinterest.btn.btn-lg{
     background-color: white;
+    margin: 0px;
+    padding: 0px;
 }
 .applyinterest.well{
     background-color: transparent;
